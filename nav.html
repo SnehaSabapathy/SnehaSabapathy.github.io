@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="nav.css">
+
+<title>THE WHEELERS</title>
+   <meta charset="utf-8">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+   <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</head>
+<body>
+<div id="fix">
+  <header><h1>THE WHEELERS</h1></header>
+  <div id="top">
+  <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#cities">Cities</a>
+        <a href="#more">More</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+  </div>
+</div>
+<div id=intro>
+  <div class="container-fluid">
+   
+  <div class="row">
+    <div id="l1" class="col-sm-6" >
+      <img class=bike src="C:\picforwork\bike.png" alt="img">
+
+          </div>
+    <div id="container" class="col-sm-6" >
+      <p >
+       <h2 class="fore1">      Tired of waiting for cabs?? </h2>
+       <h1 class="fore">Get instant rides on two wheelers <br>and experience high quality riding  <br>with just a click.</h1>
+       <button class="getride">Get a ride now</button>
+        <button class="getride">Download App</button>
+       </p>
+    </div>
+  </div>
+</div>
+    
+</div>
+<div class="container">
+  <p id="what">What's there for you??</p>
+  <p class="quote">
+         Long rides or drop at near,why fear when we are hear!<br>
+         Earn money with just a touch on your phone.
+   </p>
+  <div>
+    <button class="signup">Sign up as a rider</button>
+  </div>
+</div>
+<div class="attribute">
+<p class="whyus"> WHY US ??? </p>
+
+<div class="flex-container">
+
+  <div >
+   <i class="fas fa-user-shield fa-5x"></i>
+   <h2 class="ttt">SAFE</h2>
+   <h3 class="tt">Completely reliable as we provide quality riders at your service </h3>
+  </div>
+  <div >
+    <i class="fas fa-coins fa-5x"></i>
+    <h2 class="ttt">AFFORDABLE</h2> 
+    <h3 class="tt">We value your money hence it is cheap and best in town.</h3>
+  </div>
+  <div >
+   <i class="far fa-check-circle fa-5x"></i>
+   <h2 class="ttt">CONVENIENT</h2>
+   <h3 class="tt">Get easy doorstep pickup, anytime...anywhere...</h3>
+  </div>  
+  
+</div>
+
+</div>
+<div class="review">
+  <h1 id="hear">HEAR FROM US ....</h1>
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I used to spend a lot of money on cabs before, but now it is easy <br> to get to my office everyday, quick and pocket friendly.</q>
+  <p class="author">- Aditya, customer</p>
+  <img class="person" src="C:\picforwork\man.png" alt="img">
+</div>
+
+<div class="mySlides">
+  <q>It is an amazing app.They have professional and great riders.<br>They provide assured safety and are always on time.</q>
+  <p class="author">- Ridhanya, customer</p>
+   <img class="person" src="C:\picforwork\woman.png" alt="img">
+</div>
+
+<div class="mySlides">
+  <q>I earn a good sum of money through this app.<br> It is completely insured and earnings are also redeemable.</q>
+  <p class="author">- Karthick, rider</p>
+   <img class="person" src="C:\picforwork\rider.png" alt="img">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+
+<div class="container">
+   <p class="down-head">What are you waiting for??? <br> Get yours right now !!</p>
+    <button class="download"><i class="fab fa-apple"></i>   Download</button>
+    <button class="download"><i class="fab fa-google-play"></i>   Download</button>
+
+</div>
+<footer class="bottom" id="footer">
+    <div class="container-fluid">
+      <i class="footer-icon fab fa-instagram "></i>
+      <i class="footer-icon fab fa-twitter "></i>
+      <i class="footer-icon fas fa-envelope "></i>
+      <i class="footer-icon fab fa-facebook-f "></i>
+      <p>© Copyright 2021 The Wheelers</p>
+    </div>
+  </footer>
+
+
+</body>
+</html> 
